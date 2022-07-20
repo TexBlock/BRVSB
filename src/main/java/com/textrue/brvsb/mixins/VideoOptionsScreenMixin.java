@@ -1,4 +1,4 @@
-package com.limeshulkerbox.bmvsb.mixins;
+package com.textrue.brvsb.mixins;
 
 import me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI;
 import net.minecraft.client.AbstractOption;
@@ -31,7 +31,7 @@ abstract class VideoOptionsScreenMixin extends Screen {
 
     @Inject(method = "init", at = @At("HEAD"))
     void mixinInit(CallbackInfo ci) {
-        this.addButton(new Button(this.width / 2 + 5, this.height - 27, 150, 20, new TranslationTextComponent("text.bmvsb.magnesiumvideosettings"), (button) -> {
+        this.addButton(new Button(this.width / 2 + 5, this.height - 27, 150, 20, new TranslationTextComponent("button.brvsb.video_settings"), (button) -> {
             assert this.minecraft != null;
             this.minecraft.displayGuiScreen(new SodiumOptionsGUI(this));
         }));
