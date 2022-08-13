@@ -1,4 +1,4 @@
-package com.limeshulkerbox.bmvsb.mixin;
+package com.limeshulkerbox.brvsb.mixin;
 
 import net.minecraft.client.Options;
 import net.minecraft.client.gui.components.Button;

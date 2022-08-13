@@ -1,11 +1,11 @@
-package com.limeshulkerbox.bmvsb;
+package com.limeshulkerbox.brvsb;
 
 import net.minecraftforge.fml.common.Mod;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("bmvsb")
-public class BMVSB
+@Mod("brvsb")
+public class BRVSB
 {
-    public BMVSB() {
+    public BRVSB() {
     }
 }

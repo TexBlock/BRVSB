@@ -17,8 +17,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "1.0.3"
-group = 'com.limeshulkerbox.bmvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'bmvsb'
+group = 'com.limeshulkerbox.brvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'brvsb'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -103,7 +103,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'bmvsb', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'brvsb', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 examplemod {
@@ -134,7 +134,7 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18-38.0.17'
-    implementation fg.deobf("curse.maven:sodium-reforged-532724:3556734")
+    implementation fg.deobf("curse.maven:rubidium-532724:3556734")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
@@ -154,12 +154,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "bmvsb",
-                "Specification-Vendor"    : "bmvsb",
+                "Specification-Title"     : "brvsb",
+                "Specification-Vendor"    : "brvsb",
                 "Specification-Version"   : project.version,
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.version,
-                "Implementation-Vendor"   : "bmvsb",
+                "Implementation-Vendor"   : "brvsb",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
@@ -185,7 +185,7 @@ publishing {
 }
 
 mixin {
-    add sourceSets.main, "bmvsb.refmap.json"
+    add sourceSets.main, "brvsb.refmap.json"
 
-    config "bmvsb.mixins.json"
+    config "brvsb.mixins.json"
 }

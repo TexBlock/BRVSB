@@ -1,4 +1,4 @@
-package com.limeshulkerbox.bmvsb.mixin;
+package com.limeshulkerbox.brvsb.mixin;
 
 import net.minecraft.client.Option;
 import net.minecraft.client.gui.components.Button;
@@ -37,7 +37,7 @@ public abstract class MixinVideoOptionsScreen extends Screen {
     @Inject(method = "init", at = @At("HEAD"))
     void mixinInit(CallbackInfo callbackInfo) {
         if (ModList.get().isLoaded("magnesium") || ModList.get().isLoaded("rubidium")) {
-            this.addRenderableWidget(new Button(this.width / 2 + 5, this.height - 27, 150, 20, new TranslatableComponent("text.bmvsb.magnesiumvideosettings"), (button) -> {
+            this.addRenderableWidget(new Button(this.width / 2 + 5, this.height - 27, 150, 20, new TranslatableComponent("button.brvsb.video_settings"), (button) -> {
                 if (ModList.get().isLoaded("reeses-sodium-options")) {
                     flashyReesesOptionsScreen();
                 } else {
