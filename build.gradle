@@ -23,7 +23,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = 'mc1.16.5-1.0.0'
+version = 'mc1.16.5-1.0.0-Hotfix'
 group = 'com.textrue.brvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'brvsb'
 

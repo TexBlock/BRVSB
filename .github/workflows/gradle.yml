@@ -35,5 +35,5 @@ jobs:
         arguments: build
     - uses: actions/upload-artifact@v3
       with:
-        name: Package
+        name: BRVSB-AutoBuild
         path: build/libs
