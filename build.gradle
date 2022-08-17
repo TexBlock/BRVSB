@@ -16,7 +16,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "1.0.3"
+version = "1.0.4"
 group = 'com.limeshulkerbox.brvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'brvsb'
 
@@ -59,7 +59,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                brvsb {
                     source sourceSets.main
                 }
             }
@@ -81,7 +81,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                brvsb {
                     source sourceSets.main
                 }
             }
@@ -106,7 +106,7 @@ minecraft {
             args '--mod', 'brvsb', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                examplemod {
+                brvsb {
                     source sourceSets.main
                 }
             }
@@ -134,7 +134,8 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18-38.0.17'
-    implementation fg.deobf("curse.maven:rubidium-532724:3556734")
+    implementation fg.deobf("curse.maven:rubidium-574856:3654785")
+    implementation fg.deobf("curse.maven:magnesium-532724:3555821")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
@@ -155,11 +156,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "brvsb",
-                "Specification-Vendor"    : "brvsb",
+                "Specification-Vendor"    : "TexTrue",
                 "Specification-Version"   : project.version,
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.version,
-                "Implementation-Vendor"   : "brvsb",
+                "Implementation-Vendor"   : "LimeShulkerBox",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
