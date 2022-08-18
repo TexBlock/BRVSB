@@ -29,3 +29,23 @@ Removes Rubidium annoyances with their stupid video settings menu'''
     modId="rubidium"
     mandatory=true
     versionRange="[0.2, )"
+
+[[dependencies.brvsb]]
+    modId="magnesium"
+    mandatory=true
+    versionRange="[0.2, )"
+
+[[dependencies.brvsb]]
+    modId="halogen"
+    mandatory=true
+    versionRange="[0.2, )"
+
+[[dependencies.brvsb]]
+    modId="halogen"
+    mandatory=true
+    versionRange="[0.2, )"
+
+[[dependencies.brvsb]]
+    modId="chlorine"
+    mandatory=true
+    versionRange="[0.0.1, )"
