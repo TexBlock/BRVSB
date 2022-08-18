@@ -23,9 +23,9 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = 'mc1.16.5-1.0.0-Hotfix'
-group = 'com.textrue.brvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'brvsb'
+version = "mc${minecraft_version}-${mod_version}"
+group = 'com.limeshulkerbox.brvsb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "${mod_id}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 
@@ -148,6 +148,8 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.24'
 
+    implementation fg.deobf("curse.maven:halogen-491233:3375920")
+    implementation fg.deobf("curse.maven:magnesium-532724:3526076")
     implementation fg.deobf("curse.maven:rubidium-574856:3840890")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

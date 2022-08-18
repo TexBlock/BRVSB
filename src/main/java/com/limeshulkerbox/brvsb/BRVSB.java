@@ -1,4 +1,4 @@
-package com.textrue.brvsb;
+package com.limeshulkerbox.brvsb;
 
 import net.minecraftforge.fml.common.Mod;
 

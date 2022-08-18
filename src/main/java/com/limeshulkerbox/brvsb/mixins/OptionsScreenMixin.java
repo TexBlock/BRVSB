@@ -1,4 +1,4 @@
-package com.textrue.brvsb.mixins;
+package com.limeshulkerbox.brvsb.mixins;
 
 import net.minecraft.client.GameSettings;
 import net.minecraft.client.gui.screen.OptionsScreen;

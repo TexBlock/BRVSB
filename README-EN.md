@@ -4,6 +4,6 @@
  <h2 align="center">Better Rubidium Video Settings Button</h2>
  <p align="center">Better Magnesium Video Setting Button Fork</p>
 
-[English](README-EN.md) / 简体中文
+English / [简体中文](README.md)
 
-这个MOD将镁/铷的视频设置菜单改为原来的，并增加了一个按钮，以便在有特殊选项的情况下进入镁/铷的菜单。
+This mod changes the Magnesium/Rubidium video settings menu to the original and adds a button to get to the Magnesium/Rubidium one in case of special options.

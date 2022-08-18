@@ -1,4 +1,4 @@
-package com.textrue.brvsb.mixins;
+package com.limeshulkerbox.brvsb.mixins;
 
 import me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI;
 import net.minecraft.client.AbstractOption;
