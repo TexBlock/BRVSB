@@ -6,4 +6,5 @@
 
 [English](README-EN.md) / 简体中文
 
-This mod changes the Magnesium/Rubidium video settings menu to the original and adds a button to get to the Magnesium/Rubidium one in case of special options.
+这个MOD将镁/铷的视频设置菜单改为原来的，并增加了一个按钮，以便在有特殊选项的情况下进入镁/铷的菜单。
+
